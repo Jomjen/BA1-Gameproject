@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{A1BB1DD4-E6F4-7940-1365-4726D3F17418}</ProjectGuid>
+    <ProjectGuid>{534D700F-B53D-06B5-8E9C-1EDC4E2D8279}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -923,16 +923,16 @@
     <None Include="Assets\PlayMaker\Readme.txt" />
     <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Bruger/Documents/GitHub/BA1_gameproject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/sofsc/Documents/GitHubKADK/BA1-Gameproject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Bruger/Documents/GitHub/BA1_gameproject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/sofsc/Documents/GitHubKADK/BA1-Gameproject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Bruger/Documents/GitHub/BA1_gameproject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/sofsc/Documents/GitHubKADK/BA1-Gameproject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Bruger/Documents/GitHub/BA1_gameproject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/sofsc/Documents/GitHubKADK/BA1-Gameproject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -1132,17 +1132,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Bruger/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/Bruger/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    <Reference Include="ConditionalExpression">
+      <HintPath>C:/Users/sofsc/Documents/GitHubKADK/BA1-Gameproject/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
     </Reference>
     <Reference Include="PlayMaker">
-      <HintPath>C:/Users/Bruger/Documents/GitHub/BA1_gameproject/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+      <HintPath>C:/Users/sofsc/Documents/GitHubKADK/BA1-Gameproject/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
     </Reference>
-    <Reference Include="ConditionalExpression">
-      <HintPath>C:/Users/Bruger/Documents/GitHub/BA1_gameproject/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/sofsc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/sofsc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
