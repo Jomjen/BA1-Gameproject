@@ -222,34 +222,34 @@ CompositeCollider2D:
         Y: 80000000
       - X: 90000000
         Y: -30000000
-    - - X: -40000000
-        Y: 50000000
-      - X: -80000000
-        Y: 50000000
-      - X: -80000000
-        Y: 31093750
-      - X: -40000000
-        Y: 31093750
     - - X: 60000000
         Y: 50000000
       - X: 0
         Y: 50000000
       - X: 0
-        Y: 31093750
+        Y: 30000000
       - X: 40000000
-        Y: 31093750
+        Y: 30000000
       - X: 40000000
         Y: -10000000
       - X: 60000000
         Y: -10000000
     - - X: -40000000
-        Y: -10000000
+        Y: 50000000
       - X: -80000000
-        Y: -10000000
+        Y: 50000000
       - X: -80000000
-        Y: -18906250
+        Y: 30000000
       - X: -40000000
-        Y: -18906250
+        Y: 30000000
+    - - X: -40000000
+        Y: -10000000
+      - X: -80000000
+        Y: -10000000
+      - X: -80000000
+        Y: -20000000
+      - X: -40000000
+        Y: -20000000
   m_CompositePaths:
     m_Paths:
     - - {x: 11, y: 9}
@@ -260,20 +260,20 @@ CompositeCollider2D:
       - {x: -9, y: 8}
       - {x: 9, y: 8}
       - {x: 9, y: -3}
-    - - {x: -4, y: 5}
-      - {x: -8, y: 5}
-      - {x: -8, y: 3.109375}
-      - {x: -4, y: 3.109375}
     - - {x: 6, y: 5}
       - {x: 0, y: 5}
-      - {x: 0, y: 3.109375}
-      - {x: 4, y: 3.109375}
+      - {x: 0, y: 3}
+      - {x: 4, y: 3}
       - {x: 4, y: -1}
       - {x: 6, y: -1}
+    - - {x: -4, y: 5}
+      - {x: -8, y: 5}
+      - {x: -8, y: 3}
+      - {x: -4, y: 3}
     - - {x: -4, y: -1}
       - {x: -8, y: -1}
-      - {x: -8, y: -1.890625}
-      - {x: -4, y: -1.890625}
+      - {x: -8, y: -2}
+      - {x: -4, y: -2}
   m_VertexDistance: 0.0005
 --- !u!50 &225569736
 Rigidbody2D:
@@ -2112,11 +2112,13 @@ GameObject:
   - component: {fileID: 1666707783}
   - component: {fileID: 1666707782}
   - component: {fileID: 1666707781}
+  - component: {fileID: 1666707788}
   - component: {fileID: 1666707780}
   - component: {fileID: 1666707784}
   - component: {fileID: 1666707785}
   - component: {fileID: 1666707786}
   - component: {fileID: 1666707787}
+  - component: {fileID: 1666707789}
   m_Layer: 0
   m_Name: CubeChar
   m_TagString: Untagged
@@ -2131,7 +2133,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1666707778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 8.47, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2138085478}
@@ -3246,7 +3248,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005388975, y: 0.00800705}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3257,7 +3259,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0051646, y: 0.99414635}
   m_EdgeRadius: 0
 --- !u!50 &1666707782
 Rigidbody2D:
@@ -3586,8 +3588,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 536.16406
-        y: 344.3203
+        x: 547.5781
+        y: 311.46875
         width: 116.4
         height: 32
       isBreakpoint: 0
@@ -3598,7 +3600,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: 'On Collision '
+        toState: State 2
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -3966,14 +3968,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 0
+        - ownerOption: 1
           gameObject:
             useVariable: 0
             name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1666707778}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -4007,7 +4009,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - reset countJump
-        byteData: 00000000
+        byteData: 01000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -4176,6 +4178,101 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 585.8125
+        y: 423.53125
+        width: 122
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: touching walls
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 'On Collision '
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Collision2dEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 69cd8c01
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1666707778}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Ground
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - touching walls
+        byteData: 02000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000070000001200000017000000130000000f000000
+        paramName:
+        - gameObject
+        - collision
+        - collideTag
+        - sendEvent
+        - storeCollider
+        - storeForce
+        paramDataPos: 000000000000000000000000000000000000000000000000
+        paramByteDataSize: 000000000400000000000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -4199,6 +4296,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: reset countJump
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: touching walls
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -4374,7 +4474,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - squeeze slide
-        byteData: 0012010000
+        byteData: 0112010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -4865,7 +4965,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - normal shape
-        byteData: 0000000011010000
+        byteData: 0100000011010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -4950,7 +5050,7 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           FloatParameter:
-            useVariable: 0
+            useVariable: 1
             name: 
             tooltip: 
             showInInspector: 0
@@ -5487,7 +5587,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000000
+        byteData: 0000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -5621,7 +5721,7 @@ MonoBehaviour:
           name: Listening
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 1
+        toState: Jump Pressed
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -5851,14 +5951,14 @@ MonoBehaviour:
         - storeForce
         paramDataPos: 00000000000000000000000000000000010000000000000004000000010000000500000000000000000000000000000002000000
         paramByteDataSize: 00000000040000000000000000000000000000000000000001000000000000000400000000000000000000000000000000000000
-    - name: State 1
+    - name: Jump Pressed
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 246
         y: 110.99219
-        width: 100
+        width: 122
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -6137,6 +6237,38 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!66 &1666707788
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666707778}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+--- !u!114 &1666707789
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666707778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1892084408, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs: []
 --- !u!1 &1790994348
 GameObject:
   m_ObjectHideFlags: 0
